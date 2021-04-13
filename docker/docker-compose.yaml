@@ -1,0 +1,11 @@
+version: '2.3'
+
+services:
+  ML_analysis:
+    image: "dr34d/ml_analysis:latest"
+    restart: always
+    tty: true
+    ports: 
+      - "127.0.0.1:64290:64290"
+    entrypoint: "python main.py"
+
